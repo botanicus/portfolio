@@ -1,0 +1,17 @@
+{
+  "name": "101ideas.cz",
+  "version": "0.0.1",
+  "authors": [
+    "James C Russell <james@101ideas.cz>"
+  ],
+  "license": "MIT",
+  "homepage": "http://101ideas.cz",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
