@@ -11,8 +11,8 @@ bower install
 
 ```
 boot2docker up
-docker build .
-docker run -p 80:80 dedbfa8da583
+docker build -t portfolio .
+docker run -p 80:80 portfolio
 
 curl -I "http://$(boot2docker ip)/"
 docker exec -it sick_kowalevski /bin/bash
