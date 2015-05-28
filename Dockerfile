@@ -1,6 +1,7 @@
-FROM nginx
+FROM lampe/minimal-nginx:latest-busybox
 
-COPY vhost.conf /etc/nginx/conf.d/default.conf
+# Override the existing default vhost.
+COPY vhost.conf /etc/nginx/sites-enabled/default
 
 ENV ROOT /webs/101ideas.cz
 

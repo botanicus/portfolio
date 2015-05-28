@@ -11,7 +11,7 @@ end
 desc "SSH into a running container."
 task :ssh do
   id = %x{docker ps | grep portfolio:latest | awk '{ print $1 }'}.chomp
-  sh "docker exec -it #{id} /bin/bash"
+  sh "docker exec -it #{id} /bin/sh"
 end
 
 desc "Build and run the container."
