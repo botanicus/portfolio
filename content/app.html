@@ -2,19 +2,50 @@
 <html ng-app="app" ng-controller="MainController">
   <head>
     <base href="/">
-    <title ng-bind="title">Ruby/JS developer James C Russell</title>
+    <title>Ruby/JS developer James C Russell</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script defer src="/bower_components/angular/angular.js"></script>
     <script defer src="/bower_components/angular-route/angular-route.js"></script>
+    <script defer src="http://www.google-analytics.com/analytics.js"></script>
     <script defer src="/app.js"></script>
+
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/bower_components/github-fork-ribbon-css/gh-fork-ribbon.css" />
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" href="/bower_components/github-fork-ribbon-css/gh-fork-ribbon.ie.css" />
+    <![endif]-->
 
     <link rel="stylesheet" href="/app.css">
   </head>
 
-  <body>
-    <div ng-view>Loading ...</div>
+  <body class="container">
+    <!-- Ribbon. -->
+    <header>
+      <div class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+          <a href="mailto:contracts@101ideas.cz">Available for hire!</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Links. -->
+    <nav>
+      <ul class="list-inline">
+        <li><a href="https://www.evernote.com/l/AAXzGZpM3MJFA58ZRTPN0_jalvbhGjIzKqg">CV</a></li>
+        <li><a href="https://twitter.com/botanicus">Twitter</a></li>
+        <li><a href="https://github.com/botanicus">GitHub</a></li>
+        <li><a href="https://uk.linkedin.com/in/botanicus">LinkedIn</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main. -->
+    <section ng-view>Loading ...</section>
+
+    <!-- Footer. -->
+    <footer></footer>
   </body>
 </html>

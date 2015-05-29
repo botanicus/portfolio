@@ -1,0 +1,25 @@
+I believe in: OSS, constant learning
+
+# 27 Word persuasion technique
+encourage dreams
+calm their fears
+confirm their suspicions
+justify their failures
+help to throw rocks on their enemies
+
+# Launch
+- GA
+- HTML 5 layout, sections, footer etc.
+- Update bower dependencies.
+
+# Before launch
+- botanicus.me ?
+- Get testimonials (coworkers, employers, community)
+
+# Later
+- Link to my blog.
+- Nginx: vhost conf ready for deployment, logs etc.
+- When Docker supports unprivileged users, change from root.
+
+- getting paid for OSS work, research how
+

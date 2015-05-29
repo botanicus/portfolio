@@ -1,4 +1,4 @@
-desc "Build the container."
+desc "Build the image."
 task :build do
   sh "docker build -t portfolio ."
 end
@@ -16,3 +16,8 @@ end
 
 desc "Build and run the container."
 task default: [:build, :run]
+
+desc "Publish the image."
+task :publish do
+  # TODO
+end

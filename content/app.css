@@ -1,0 +1,5 @@
+body > nav { padding-top: 20px; }
+body > footer { padding-bottom: 70px; }
+.header p.lead { padding: 0 0 20px 110px; }
+blockquote p, blockquote footer { padding-left: 120px; }
+.image { padding: 20px;}
