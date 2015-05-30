@@ -11,5 +11,11 @@
     "**/.*",
     "bower_components",
     "test"
-  ]
+  ],
+  "dependencies": {
+    "angular-route": "~1.4.0",
+    "bootstrap": "~3.3.4",
+    "angularjs": "1.4",
+    "github-fork-ribbon-css": "~0.1.1"
+  }
 }
