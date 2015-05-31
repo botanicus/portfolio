@@ -1,11 +1,11 @@
 {
-  "name": "101ideas.cz",
+  "name": "botanicus.me",
   "version": "0.0.1",
   "authors": [
     "James C Russell <james@101ideas.cz>"
   ],
   "license": "MIT",
-  "homepage": "http://101ideas.cz",
+  "homepage": "http://botanicus.me",
   "private": true,
   "ignore": [
     "**/.*",

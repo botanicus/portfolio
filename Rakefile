@@ -5,7 +5,7 @@ end
 
 desc "Run the container."
 task :run do
-  sh "docker run -p 80:80 -v #{Dir.pwd}:/webs/101ideas.cz:ro portfolio"
+  sh "docker run -p 80:80 -v #{Dir.pwd}:/webs/botanicus.me:ro portfolio"
 end
 
 desc "SSH into a running container."
