@@ -1,4 +1,0 @@
-# Since we distribute it as a Docker image, we no longer have to
-# put Bower dependencies into Git, but rather just install them
-# as an AUFS layer.
-content/bower_components
