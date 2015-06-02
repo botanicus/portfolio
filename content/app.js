@@ -14,13 +14,12 @@ app.config(function ($locationProvider, $routeProvider) {
 
 // Set up Google Analytics.
 app.run(function ($rootScope, $window, $location) {
-  var isIP = $location.host().match(/^(\d+\.)+\d+$/);
-  var cookieDomain = isIP ? 'none' : 'auto';
-  console.log("~ Google Analytics: " + cookieDomain);
-  $window.ga('create', 'UA-63572342-1', cookieDomain);
-  $rootScope.$on('$routeChangeSuccess', function () {
-    $window.ga('send', 'pageview', $location.path());
-  });
+  if ($location.host() == 'botanicus.me') {
+    $window.ga('create', 'UA-63572342-1');
+    $rootScope.$on('$routeChangeSuccess', function () {
+      $window.ga('send', 'pageview', $location.path());
+    });
+  }
 });
 
 
