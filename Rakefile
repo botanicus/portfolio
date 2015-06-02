@@ -11,6 +11,12 @@ task :run do
   sh "docker run -p 80:80 -v #{Dir.pwd}:#{PATH}:ro #{NAME}"
 end
 
+desc "Open the running site."
+task :open do
+  ip = %x{boot2docker ip}
+  sh "open http://#{ip}/"
+end
+
 desc "SSH into a running container."
 task :ssh do
   id = %x{docker ps | grep #{NAME}:latest | awk '{ print $1 }'}.chomp

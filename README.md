@@ -10,9 +10,14 @@ Bower packages are part of the container, but not part of the repository, so you
 
 ```
 boot2docker up # Don't forget to export the env variables it prints!
+
+# Build the container and run it.
 rake
 
-curl -I "http://$(boot2docker ip)/"
+# Open the app in your browser.
+rake open
+
+# Connect to the running container.
 rake ssh
 ```
 
