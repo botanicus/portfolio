@@ -25,8 +25,3 @@ end
 
 desc "Build and run the container."
 task default: [:build, :run]
-
-desc "Publish the image."
-task :publish do
-  # TODO
-end
