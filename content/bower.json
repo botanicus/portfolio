@@ -10,6 +10,7 @@
   "ignore": [
     "**/.*",
     "bower_components",
+    "tests",
     "test"
   ],
   "dependencies": {
