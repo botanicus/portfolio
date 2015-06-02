@@ -25,7 +25,9 @@ rake ssh
 
 Obviously the source code is all baked-in.
 
-For development we shadow $ROOT by running `docker run` with `-v #{Dir.pwd}:/webs/botanicus.me`. You need Docker 1.3 or higher for this. You don't need to worry about it, just run `rake` as usual.
+For development we shadow `$ROOT` by running `docker run` with `-v #{Dir.pwd}:/webs/botanicus.me:ro`. You need Docker 1.3 or higher for this.
+
+Running `rake` will take care of it, it's just important to know that what you see in development is not necessarily the same as what is in the container at the moment! So for deployment, you have to re-run `rake build`.
 
 ## Deployment
 
