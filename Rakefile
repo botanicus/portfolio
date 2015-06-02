@@ -14,7 +14,7 @@ end
 desc "Open the running site."
 task :open do
   ip = %x{boot2docker ip}
-  sh "open http://#{ip}/"
+  sh "open http://#{ip}"
 end
 
 desc "SSH into a running container."
