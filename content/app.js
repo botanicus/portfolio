@@ -14,7 +14,7 @@ app.config(function ($locationProvider, $routeProvider) {
 
 // Set up Google Analytics.
 app.run(function ($rootScope, $window, $location) {
-  if ($location.host() == 'botanicus.me') {
+  if ($location.host() == 'botanicus.me' && $window.ga) {
     $window.ga('create', 'UA-63572342-1');
     $rootScope.$on('$routeChangeSuccess', function () {
       $window.ga('send', 'pageview', $location.path());
