@@ -31,7 +31,7 @@ app.controller('IndexController', function ($scope, $http) {
   $scope.jsYears = thisYear - 2009;
   $scope.angularYears = thisYear - 2013;
 
-  $scope.rate = 500;
+  $scope.rate = 475;
   $scope.discountedRate = Math.round(500 * 0.8);
 
   $http.get('http://api.fixer.io/latest?base=GBP&symbols=USD').
