@@ -41,14 +41,16 @@ h1 .mobile-portrait { display: none; }
 @media (max-width: 768px) and (orientation: portrait) {
   h1 .mobile-portrait { display: block; padding: 9px 0; }
   h1 .default { display: none; }
+  footer.footer { padding: 10px; }
 }
 
 @media (max-width: 768px) {
-  a[role=button], button[type=button] {
+  a[role=button] {
     margin-left: auto; margin-right: auto; display: block;
-    font-size: 18px;
   }
 }
+
+button[type=button] { font-size: 18px; }
 
 form input {
   width: 100%; display: block;
@@ -105,6 +107,7 @@ html, body {
 .container, .container-fluid {
   min-height: 100%;
   margin: 0 auto -135px; /* the bottom margin is the negative value of the footer's height */
+  /* I changed that */
 }
 
 body > footer, .push {
