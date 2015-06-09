@@ -23,43 +23,45 @@
     <link rel="stylesheet" href="/app.css">
   </head>
 
-  <body class="container-fluid">
-    <!-- Ribbon. -->
-    <header>
-      <div class="github-fork-ribbon-wrapper right">
-        <div class="github-fork-ribbon">
-          <a href="mailto:{{email}}?subject={{emailSubject | encodeURIComponent}}&body={{emailBody | encodeURIComponent}}">Available for hire!</a>
+  <body>
+    <div class="container-fluid">
+      <!-- Ribbon. -->
+      <header>
+        <div class="github-fork-ribbon-wrapper right">
+          <div class="github-fork-ribbon">
+            <a href="mailto:{{email}}?subject={{emailSubject | encodeURIComponent}}&body={{emailBody | encodeURIComponent}}">Available for hire!</a>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <!-- Links. -->
-    <nav>
-      <ul class="list-inline">
-        <li><a href="https://www.evernote.com/l/AAXzGZpM3MJFA58ZRTPN0_jalvbhGjIzKqg">CV</a></li>
-        <li><a href="https://twitter.com/botanicus">Twitter</a></li>
-        <li><a href="https://github.com/botanicus">GitHub</a></li>
-        <li><a href="https://uk.linkedin.com/in/botanicus">LinkedIn</a></li>
-      </ul>
-    </nav>
+      <!-- Links. -->
+      <nav>
+        <ul class="list-inline">
+          <li><a href="https://www.evernote.com/l/AAXzGZpM3MJFA58ZRTPN0_jalvbhGjIzKqg">CV</a></li>
+          <li><a href="https://twitter.com/botanicus">Twitter</a></li>
+          <li><a href="https://github.com/botanicus">GitHub</a></li>
+          <li><a href="https://uk.linkedin.com/in/botanicus">LinkedIn</a></li>
+        </ul>
+      </nav>
 
-    <!-- Main. -->
-    <section ng-view>
-      <div id="spinner">
-        <i class="fa fa-spinner fa-spin"></i> Loading ...
-      </div>
+      <!-- Main. -->
+      <section ng-view>
+        <div id="spinner">
+          <i class="fa fa-spinner fa-spin"></i> Loading ...
+        </div>
 
-      <div id="show-delayed" class="bg-warning">
-        <h1>Problem loading</h1>
-        <p>
-          Your connection is slow. Wait a bit more or use a faster network.
-        </p>
+        <div id="show-delayed" class="bg-warning">
+          <h1>Problem loading</h1>
+          <p>
+            Your connection is slow. Wait a bit more or use a faster network.
+          </p>
 
-        <p>
-          If this persists, please be so kind and drop me an email to <a href="mailto:james@101ideas.cz?subject=Your portfolio is broken">contracts@101ideas.cz</a>. Thank you!
-        </p>
-      </div>
-    </section>
+          <p>
+            If this persists, please be so kind and drop me an email to <a href="mailto:james@101ideas.cz?subject=Your portfolio is broken">contracts@101ideas.cz</a>. Thank you!
+          </p>
+        </div>
+      </section>
+    </div>
 
     <!-- To make sure the footer is always where it is supposed to be. -->
     <div class="push"></div>
@@ -68,7 +70,7 @@
     <footer>
       <div class="footer">
         <p>
-          {{year}} James C Russell.
+          {{year}} James C Russell
         </p>
 
         <p>
