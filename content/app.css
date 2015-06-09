@@ -23,16 +23,22 @@ blockquote p {
   font-style: italic;
 }
 
+#spinner {
+  padding-top: 30px;
+  padding-left: 25px;
+  font-size: 175%; color: darkgrey;
+}
+
 /* Display error in case AngularJS app hasn't load */
 #show-delayed {
     visibility: hidden;
-    -moz-animation: delayedShow 0s ease-in 5s forwards;
+    -moz-animation: delayedShow 0s ease-in 10s forwards;
     /* Firefox */
-    -webkit-animation: delayedShow 0s ease-in 5s forwards;
+    -webkit-animation: delayedShow 0s ease-in 10s forwards;
     /* Safari and Chrome */
-    -o-animation: delayedShow 0s ease-in 5s forwards;
+    -o-animation: delayedShow 0s ease-in 10s forwards;
     /* Opera */
-    animation: delayedShow 0s ease-in 5s forwards;
+    animation: delayedShow 0s ease-in 10s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }

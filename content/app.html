@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="/bower_components/github-fork-ribbon-css/gh-fork-ribbon.css" />
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
     <!--[if lt IE 9]>
       <link rel="stylesheet" href="/bower_components/github-fork-ribbon-css/gh-fork-ribbon.ie.css" />
     <![endif]-->
@@ -44,11 +45,18 @@
 
     <!-- Main. -->
     <section ng-view>
-      Loading ...
+      <div id="spinner">
+        <i class="fa fa-spinner fa-spin"></i> Loading ...
+      </div>
+
       <div id="show-delayed" class="bg-warning">
-        <h1>Error</h1>
+        <h1>Problem loading</h1>
         <p>
-          If you see this, that means either your connection is slow or the site is broken. If this persists, please be so kind and drop me an email to <a href="mailto:james@101ideas.cz?subject=Your portfolio is broken">contracts@101ideas.cz</a>. Thank you!
+          Your connection is slow. Wait a bit more or use a faster network.
+        </p>
+
+        <p>
+          If this persists, please be so kind and drop me an email to <a href="mailto:james@101ideas.cz?subject=Your portfolio is broken">contracts@101ideas.cz</a>. Thank you!
         </p>
       </div>
     </section>
