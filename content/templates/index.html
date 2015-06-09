@@ -155,21 +155,29 @@
   <div class="text-center">
     <a role="button" href="mailto:{{email}}?subject={{emailSubject | encodeURIComponent}}&body={{emailBody | encodeURIComponent}}" class="btn btn-lg btn-success">Get in touch now!</a>
   </div>
+  <br>
 
-  <h2>Not looking right now?<br><small>Subscribe to my mailing list and I'll notify you next time I'm available!</small></h2>
-  <form action="http://ppt.us3.list-manage1.com/subscribe/post" method="POST">
-    <input type="hidden" name="u" value="d56ce1cfbba4228b9cfa05d3c" />
-    <input type="hidden" name="id" value="6481c1a632" />
+  <div class="highlight">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 newsletter">
+        <h2>Not looking right now?<br><small>Subscribe to my mailing list and I'll notify you next time I'm available!</small></h2>
+        <form action="http://ppt.us3.list-manage1.com/subscribe/post" method="POST">
+          <input type="hidden" name="u" value="d56ce1cfbba4228b9cfa05d3c" />
+          <input type="hidden" name="id" value="6481c1a632" />
 
-    <label for="mailchimp_email_field">
-      What's your email address?
-    </label>
+          <label for="mailchimp_email_field">
+            What's your email address?
+          </label>
 
-    <input type="email" placeholder="you@yourcompany.com" autocapitalize="off" autocorrect="off" name="MERGE0" id="mailchimp_email_field" size="25" value="" />
+          <input type="email" placeholder="you@yourcompany.com" autocapitalize="off" autocorrect="off" name="MERGE0" id="mailchimp_email_field" value="" />
 
-    <!-- Mailchip robot trap. I changed it to type hidden. Robots don't go here unless they'd execute JS. -->
-    <input type="hidden" name="b_d56ce1cfbba4228b9cfa05d3c_6481c1a632" tabindex="-1" value="" />
+          <!-- Mailchip robot trap. I changed it to type hidden. Robots don't go here unless they'd execute JS. -->
+          <input type="hidden" name="b_d56ce1cfbba4228b9cfa05d3c_6481c1a632" tabindex="-1" value="" />
 
-    <button class="btn btn-default" type="submit">Subscribe!</button>
-  </form>
+          <button type="button" class="btn btn-large btn-block btn-primary" type="submit">Subscribe!</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
