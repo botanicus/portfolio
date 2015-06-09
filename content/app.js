@@ -27,13 +27,13 @@ app.controller('MainController', function ($scope) {
   $scope.email = 'contracts@101ideas.cz';
   $scope.emailSubject = "I like your portfolio. We should talk!";
   $scope.emailBody = "Hi James,\n\nI'm [YOUR NAME] from [YOUR COMPANY].\n\nWe're currently looking for Ruby contractors and I wonder if you'd be interested.\n\nYou can find more at [LINK].\n\nHow about we have a quick chat on Skype? My Skype is [SKYPE ID].\n\nThanks!";
+  $scope.year = new Date().getFullYear();
 });
 
 app.controller('IndexController', function ($scope, $http) {
-  var thisYear = new Date().getFullYear();
-  $scope.rubyYears = thisYear - 2008;
-  $scope.jsYears = thisYear - 2009;
-  $scope.angularYears = thisYear - 2013;
+  $scope.rubyYears = $scope.year - 2008;
+  $scope.jsYears = $scope.year - 2009;
+  $scope.angularYears = $scope.year - 2013;
 
   $scope.rate = 475;
   $scope.discountedRate = Math.round(500 * 0.8);
