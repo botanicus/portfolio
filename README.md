@@ -2,10 +2,6 @@
 
 [My portfolio](http://botanicus.me) distributed in a Docker container based on Nginx.
 
-## Setup
-
-Bower packages are part of the container, but not part of the repository, so you need to run `bower install` in `content/` (where the `bower.json` file is).
-
 ## Development
 
 ```
