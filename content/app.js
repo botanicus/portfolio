@@ -26,7 +26,7 @@ app.run(function ($rootScope, $window, $location) {
 app.controller('MainController', function ($scope) {
   $scope.email = 'contracts@101ideas.cz';
   $scope.emailSubject = "I like your portfolio. We should talk!";
-  $scope.emailBody = "Hi James,\n\nI'm [YOUR NAME] from [YOUR COMPANY].\n\nWe're currently looking for Ruby contractors and I wonder if you'd be interested.\n\nYou can find more at [LINK].\n\nHow about we have a quick chat on Skype? My Skype ID is [SKYPE ID].\n\nThanks!";
+  $scope.emailBody = "Hi James,\n\nI'm [YOUR NAME] from [YOUR COMPANY].\n\nWe're currently looking for Ruby contractors and I wonder if you'd be interested.\n\nYou can find more at [LINK].\n\nHow about we have a quick chat on Skype? My Skype is [SKYPE ID].\n\nThanks!";
 });
 
 app.controller('IndexController', function ($scope, $http) {

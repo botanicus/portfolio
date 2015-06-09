@@ -16,3 +16,25 @@ h1 .mobile-portrait { display: none; }
   h1 .mobile-portrait { display: block; padding: 9px 0; }
   h1 .default { display: none; }
 }
+
+/* Display error in case AngularJS app hasn't load */
+#show-delayed {
+    visibility: hidden;
+    -moz-animation: delayedShow 0s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: delayedShow 0s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: delayedShow 0s ease-in 5s forwards;
+    /* Opera */
+    animation: delayedShow 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes delayedShow {
+  to {
+    visibility: visible;
+    border-color: red;
+    border-style: solid;
+  }
+}
