@@ -60,8 +60,9 @@ app.directive('abbr', function () {
     restrict: 'E',
     link: function (scope, element, attrs) {
       element.bind('touchstart', function (event) {
-        console.log(element[0].title);
+        if (element.helpExpanded) return;
         element[0].innerHTML += " (<mark>" + element[0].title + "</mark>)";
+        element.helpExpanded = true;
       });
     }
   }
