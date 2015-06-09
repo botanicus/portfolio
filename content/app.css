@@ -1,7 +1,8 @@
 nav { padding-top: 20px; }
 .header p.lead { padding: 0 0 20px 110px; }
+
 blockquote p, blockquote footer { padding-left: 120px; }
-.image { padding: 20px; }
+
 h3 {
   color: #707070;
   font-style: italic;
@@ -9,6 +10,10 @@ h3 {
   margin: 5px 0;
   padding: 5px 0;
 }
+
+.image { float: left; padding-right: 10px; }
+
+.center { text-align: center; }
 
 /* Mobile */
 h1 .default { display: inline; }
@@ -68,7 +73,7 @@ html, body {
 
 .container, .container-fluid {
   min-height: 100%;
-  margin: 0 auto -105px; /* the bottom margin is the negative value of the footer's height */
+  margin: 0 auto -135px; /* the bottom margin is the negative value of the footer's height */
 }
 
 body > footer, .push {
