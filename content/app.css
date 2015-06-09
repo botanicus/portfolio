@@ -21,7 +21,7 @@ h3.exclamation {
 .image { float: left; padding-right: 10px; }
 
 @media (min-width: 768px) {
-  .container-fluid { padding-left: 25px; }
+  .container-fluid { padding-left: 50px; }
   .body { padding-right: 50px; }
 }
 
