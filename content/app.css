@@ -4,16 +4,29 @@ nav { padding-top: 20px; }
 blockquote p, blockquote footer { padding-left: 120px; }
 
 h3 {
-  color: #707070;
+  color: green;
   font-style: italic;
   font-size: 18px;
   margin: 5px 0;
   padding: 5px 0;
 }
+h3 > i, h3 > b { padding-right: 5px; }
+
+h3.exclamation {
+  color: darkred;
+}
 
 .image { float: left; padding-right: 10px; }
 
-.center { text-align: center; }
+@media (min-width: 768px) {
+  .container-fluid { padding-left: 25px; }
+  .body { padding-right: 50px; }
+}
+
+.highlight {
+  padding: 5px;
+  background-color: #d9edf7;
+}
 
 /* Mobile */
 h1 .default { display: inline; }
