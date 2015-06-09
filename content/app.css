@@ -2,4 +2,17 @@ body > nav { padding-top: 20px; }
 body > footer { padding-bottom: 70px; }
 .header p.lead { padding: 0 0 20px 110px; }
 blockquote p, blockquote footer { padding-left: 120px; }
-.image { padding: 20px;}
+.image { padding: 20px; }
+
+/* Mobile */
+h1 .default { display: inline; }
+h1 .mobile-portrait { display: none; }
+
+@media (max-width: 768px) and (orientation: landscape) {
+  h1 .default { display: block; padding: 7px 0; }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  h1 .mobile-portrait { display: block; padding: 9px 0; }
+  h1 .default { display: none; }
+}
