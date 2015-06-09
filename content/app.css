@@ -41,7 +41,7 @@ h1 .mobile-portrait { display: none; }
 @media (max-width: 768px) and (orientation: portrait) {
   h1 .mobile-portrait { display: block; padding: 9px 0; }
   h1 .default { display: none; }
-  footer.footer { padding: 10px; }
+  footer .footer { padding: 10px; }
 }
 
 @media (max-width: 768px) {
@@ -60,7 +60,7 @@ form input {
 }
 
 .newsletter {
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 blockquote p {
