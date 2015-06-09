@@ -12,6 +12,8 @@ h3 {
 }
 h3 > i, h3 > b { padding-right: 5px; }
 
+/*ul { padding-left: 5px; margin-left: 5px; }*/
+
 h3.exclamation {
   color: darkred;
 }
