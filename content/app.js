@@ -23,7 +23,11 @@ app.run(function ($rootScope, $window, $location) {
 });
 
 
-app.controller('MainController', function () {});
+app.controller('MainController', function ($scope) {
+  $scope.email = 'contracts@101ideas.cz';
+  $scope.emailSubject = "I like your portfolio. We should talk!";
+  $scope.emailBody = "Hi James,\n\nI'm [YOUR NAME] from [YOUR COMPANY].\n\nWe're currently looking for Ruby contractors and I wonder if you'd be interested.\n\nYou can find more at [LINK].\n\nHow about we have a quick chat on Skype? My Skype ID is [SKYPE ID].\n\nThanks!";
+});
 
 app.controller('IndexController', function ($scope, $http) {
   var thisYear = new Date().getFullYear();
@@ -44,4 +48,8 @@ app.controller('IndexController', function ($scope, $http) {
     success(function (data, status, headers, config) {
       $scope.githubRepos = data.public_repos;
     });
+});
+
+app.filter('encodeURIComponent', function ($window) {
+  return $window.encodeURIComponent;
 });

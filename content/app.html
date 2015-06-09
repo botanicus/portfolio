@@ -2,7 +2,7 @@
 <html ng-app="app" ng-controller="MainController">
   <head>
     <base href="/">
-    <title>Ruby/JS developer James C Russell</title>
+    <title>Ruby &amp; JavaScript developer James C Russell</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@
     <header>
       <div class="github-fork-ribbon-wrapper right">
         <div class="github-fork-ribbon">
-          <a href="mailto:contracts@101ideas.cz">Available for hire!</a>
+          <a href="mailto:{{email}}?subject={{emailSubject | encodeURIComponent}}&body={{emailBody | encodeURIComponent}}">Available for hire!</a>
         </div>
       </div>
     </header>
