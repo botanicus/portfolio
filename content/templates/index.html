@@ -156,20 +156,20 @@
     <a role="button" href="mailto:{{email}}?subject={{emailSubject | encodeURIComponent}}&body={{emailBody | encodeURIComponent}}" class="btn btn-lg btn-success">Get in touch now!</a>
   </div>
 
-  <h2>Not looking now?<br><small>Subscribe to my mailing list and I'll notify you next time I'm available!</small></h2>
+  <h2>Not looking right now?<br><small>Subscribe to my mailing list and I'll notify you next time I'm available!</small></h2>
   <form action="http://ppt.us3.list-manage1.com/subscribe/post" method="POST">
-    <input type="hidden" name="u" value="d56ce1cfbba4228b9cfa05d3c">
-    <input type="hidden" name="id" value="6481c1a632">
+    <input type="hidden" name="u" value="d56ce1cfbba4228b9cfa05d3c" />
+    <input type="hidden" name="id" value="6481c1a632" />
 
     <label for="mailchimp_email_field">
       What's your email address?
     </label>
 
-    <input type="email" placeholder="you@yourcompany.com" autocapitalize="off" autocorrect="off" name="MERGE0" id="mailchimp_email_field" size="25" value="">
+    <input type="email" placeholder="you@yourcompany.com" autocapitalize="off" autocorrect="off" name="MERGE0" id="mailchimp_email_field" size="25" value="" />
 
-    <!-- Mailchip robot trap. I changed it to type hidden from text just in case. -->
-    <input type="hidden" name="b_d56ce1cfbba4228b9cfa05d3c_6481c1a632" tabindex="-1" value=""></div>
+    <!-- Mailchip robot trap. I changed it to type hidden. Robots don't go here unless they'd execute JS. -->
+    <input type="hidden" name="b_d56ce1cfbba4228b9cfa05d3c_6481c1a632" tabindex="-1" value="" />
 
-    <input type="submit" class="button" name="submit" value="Subscribe to list">
+    <button class="btn btn-default" type="submit">Subscribe!</button>
   </form>
 </div>

@@ -1,5 +1,6 @@
 # Before launch
 
+- pokud jde o nějakej design, tak je asi ok držet to takhle strohý. akorát bych dal o pořádnej kus větší padding, a maximální šířku tak abys měl cca 60-90 znaků na řádek. tydle široký texty se hrozně blbě čtou.
 - Get testimonials (coworkers, employers, community)
 - Research how to deploy (when https://stackdock.com's up) & write a rake task.
 - Point DNS to botanicus.me.
