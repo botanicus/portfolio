@@ -1,8 +1,6 @@
 nav { padding-top: 20px; }
 .header p.lead { padding: 0 0 20px 110px; }
 
-blockquote p, blockquote footer { padding-left: 120px; }
-
 h3 {
   color: green;
   font-style: italic;
@@ -36,6 +34,7 @@ h1 .mobile-portrait { display: none; }
 
 @media (max-width: 768px) and (orientation: landscape) {
   h1 .default { display: block; padding: 7px 0; }
+  blockquote p, blockquote footer { padding-left: 120px; }
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
@@ -43,6 +42,10 @@ h1 .mobile-portrait { display: none; }
   h1 .default { display: none; }
   footer .footer { padding: 10px; }
   .xxx { display: none; }
+}
+
+@media (min-width: 768px) {
+  blockquote p, blockquote footer { padding-left: 120px; }
 }
 
 @media (max-width: 768px) {

@@ -28,7 +28,6 @@ app.controller('MainController', function ($scope) {
   $scope.emailSubject = "I like your portfolio. We should talk!";
   $scope.emailBody = "Hi James,\n\nI'm [YOUR NAME] from [YOUR COMPANY].\n\nWe're currently looking for Ruby contractors and I wonder if you'd be interested.\n\nYou can find more at [LINK].\n\nHow about we have a quick chat on Skype? My Skype is [SKYPE ID].\n\nThanks!";
   $scope.year = new Date().getFullYear();
-  $scope.magicFn = function () { alert("Don't tap on me!") }
 });
 
 app.controller('IndexController', function ($scope, $http) {
