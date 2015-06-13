@@ -42,6 +42,7 @@ h1 .mobile-portrait { display: none; }
   h1 .mobile-portrait { display: block; padding: 9px 0; }
   h1 .default { display: none; }
   footer .footer { padding: 10px; }
+  .xxx { display: none; }
 }
 
 @media (max-width: 768px) {
