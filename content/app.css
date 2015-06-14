@@ -60,7 +60,7 @@ h1 .mobile-portrait { display: none; }
   }
 }
 
-button[type=button] { font-size: 18px; }
+button[type=submit] { font-size: 18px; }
 
 form input {
   width: 100%; display: block;
