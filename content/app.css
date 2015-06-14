@@ -19,7 +19,7 @@ h3.exclamation {
 .image { float: left; padding-right: 10px; }
 
 @media (min-width: 768px) {
-  .container-fluid { padding-left: 50px; }
+  .container { padding-left: 50px; }
   .body { padding-right: 50px; }
 }
 
@@ -31,6 +31,7 @@ h3.exclamation {
 /* Mobile */
 h1 .default { display: inline; }
 h1 .mobile-portrait { display: none; }
+.lead p span { display: block; }
 
 @media (max-width: 768px) and (orientation: landscape) {
   h1 .default { display: block; padding: 7px 0; }
@@ -42,6 +43,10 @@ h1 .mobile-portrait { display: none; }
   h1 .default { display: none; }
   footer .footer { padding: 10px; }
   .xxx { display: none; }
+  .lead span { display: inline; }
+  /* TODO: This still doesn't work because of padding I think.
+     The last line is supposed to show under the gravatar. */
+  .lead span:last-child { display: block; clear: both; }
 }
 
 @media (min-width: 768px) {

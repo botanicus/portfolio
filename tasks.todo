@@ -1,6 +1,6 @@
 # TODO
 
-- Testimonials are mis-aligned in the portrait mode, smaller font maybe?
+- Can I show gravatars for testimonials in iPhone portrait mode? Currently disabled, it looked silly.
 - Clean up the CSS code.
 - E-mail validation, submit prevent & error message.
 - pokud jde o nějakej design, tak je asi ok držet to takhle strohý. akorát bych dal o pořádnej kus větší padding, a maximální šířku tak abys měl cca 60-90 znaků na řádek. tydle široký texty se hrozně blbě čtou.
