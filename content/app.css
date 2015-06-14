@@ -46,7 +46,8 @@ h1 .mobile-portrait { display: none; }
   .lead span { display: inline; }
   /* TODO: This still doesn't work because of padding I think.
      The last line is supposed to show under the gravatar. */
-  .lead span:last-child { display: block; clear: both; }
+  /*.lead span:last-child { display: block; clear: both; }*/
+  .lead span:last-child { display: none; } /* for now */
 }
 
 @media (min-width: 768px) {
