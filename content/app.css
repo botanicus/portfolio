@@ -31,7 +31,7 @@ h3.exclamation {
 /* Mobile */
 h1 .default { display: inline; }
 h1 .mobile-portrait { display: none; }
-.lead p span { display: block; }
+.lead span { display: block; }
 
 @media (max-width: 768px) and (orientation: landscape) {
   h1 .default { display: block; padding: 7px 0; }
