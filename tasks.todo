@@ -1,6 +1,7 @@
 # TODO
 
 - Some page on how to ensure you're hiring the right person (without yet another stupid coding test). Links to some of my repos and contacts of people who you can speak to about my work.
+- Maybe some page "What can I offer to a startup without any technical expertise on board". Responsive page, maintainable code, tests and best practices and shit.
 - Can I show gravatars for testimonials in iPhone portrait mode? Currently disabled, it looked silly.
 - Clean up the CSS code.
 - E-mail validation, submit prevent & error message.
