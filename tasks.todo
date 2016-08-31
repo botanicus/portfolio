@@ -1,43 +1,17 @@
 # TODO
 
-- Some page on how to ensure you're hiring the right person (without yet another stupid coding test). Links to some of my repos and contacts of people who you can speak to about my work.
+- skoleni, coaching
+- Should mention full-stack
 - Maybe links to my contributions.
-- Maybe some page "What can I offer to a startup without any technical expertise on board". Responsive page, maintainable code, tests and best practices and shit.
 - Can I show gravatars for testimonials in iPhone portrait mode? Currently disabled, it looked silly.
 - Clean up the CSS code.
 - E-mail validation, submit prevent & error message.
 - pokud jde o nějakej design, tak je asi ok držet to takhle strohý. akorát bych dal o pořádnej kus větší padding, a maximální šířku tak abys měl cca 60-90 znaků na řádek. tydle široký texty se hrozně blbě čtou.
-- Some copy can be used from https://www.evernote.com/shard/s5/nl/383014/3208faae-d10a-4400-96e3-9ea369da8f97/ (for once, code not exploding after leaving ... that's a good fear based motivator.)
-- if I were hiring you for a short term contract position, I largely don't give a shit. If I have some project that needs to be done and I'm going to pay a premium for a contractor, what I care about is your ability to swoop in, ramp up very quickly and deliver results. Company culture, getting real alignment with the culture of the team etc. really are pretty low down the list, not un-important but the bar is more "will this person totally blow up my team and everyone will hate them" versus are they a long term perfect fit. I like the idea of how you've done some price anchoring but have mixed feelings about how you've displayed your rates. You have limited your upside by hopefully eliminating those that don't want to pay your rates. Is there another way you can quickly disqualify people who can't afford you, while allowing you to charge more for customers who will pay it? - Tim Robertson, TF https://www.facebook.com/groups/thefoundation2014/1657135121166294/?notif_t=group_comment
 
 # Later
 
+- Consider more consultancy full.
 - I might consider rewriting my CV to go here + CSS for print.
 - Link to my blog.
 - Get more testimonials (coworkers, employers, community)
 
-#1 The Ruby AMQP ecosystem.
-
-When I worked for the RabbitMQ team of VMware (these days part of Pivotal), my task was to maintain the AMQP gem. I've done not just that, I actually redesigned the whole library, split it in parts and re-implemented the original gem on top of it.
-
-This is an example of how I architecture things to make it logical, reusable and maintainable. Instead of having one library that does everything, I extracted:
-
-- The AMQ protocol https://github.com/ruby-amqp/amq-protocol. AMQP is a binary protocol and just the parser (which I wrote from scratch) is complex enough that it deserves to be a project of its own.
-
-- The AMQ client https://github.com/ruby-amqp/amq-client This one was deprecated by the current maintainer, but that doesn't change a thing about there being a pretty good reason for its existence. The AMQP gem is an opinionated library. The AMQP is a *very* non-trivial protocol. So this library is an exact 1:1 mapping AMQP to Ruby, it's low-level an it makes no assumptions. Depends on needs of your projects, you might just use this library (which I'm using in some of my projects), you might decide to use the AMQP gem, any other gem based of this library (I don't think there are any, but that doesn't defeat the point) OR write your own gem, a simple one, since all the heavy lifting is done in this library.
-
-- The AMQP gem https://github.com/ruby-amqp/amqp. I haven't wrote this one, as I said, it was around, but I reimplemented it on top of those two libraries and fixed many bugs.
-
-# 2 Rango
-
-This is a very old project of mine, but since it has most starts of all my GitHub projects and is still pretty cool, I'll talk about that. The code is OK, but I wrote it 6 years ago, so you know, I was a junior dev back then ... a good one, but nonetheless.
-
-Rango is a web framework I wrote out of frustration how rubbish Rails was at the time (I'm talking about Rails 1.2). Rails had and still has many anti-patterns, link the default way of building forms is through helpers which is very "hello PHP" approach. Forms are complex and absolutely deserve to be forms and to do more than just spit HTML (I'm talking data validation, cleaning the data and preparing the model, plus taking some logic out of the view if you can just call <%= form.render %> or something). That's just one example, I could go on about antipatterns in Rails for a long time, believe me.
-
-Rango has that and also, until this day, as far as I know, it's the only framework in Ruby which supports template inheritance. I found that shocking and frankly, sad. Template inheritance is a great, clean pattern which is million times more flexible than layouts with many partials glued together. I honestly can't believe Ruby people still live in the cave time and are not using this pattern (which is so popular in other lands, like Django, where I shamelessly stole it from ;) ).
-
-# 3 Sample app https://github.com/botanicus/expense-tracker-app
-
-Admittedly the first two examples might not be the easiest to evaluate, esp. given than it's been a while since I've done those projects. This is a few days long coding exercise which I've done as part of the TopTal hiring process and which got me in, after 4 other steps like Skype calls and algorithm test.
-
-It's a Rack (maybe with Sinatra, I can't remember) API + Angular.js frontend.
